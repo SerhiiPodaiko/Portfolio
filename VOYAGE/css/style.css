@@ -1,0 +1,441 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+}
+
+/* стилі для lg-устройств */
+header {
+	height: 90px;
+	background: #2c3e50;
+	max-width: 1700px;
+	min-width: 435px;
+}
+
+.logo {
+	font-size: 40px;
+	line-height: 58px;
+	padding: 0;
+}
+
+.logo h1 {
+	padding: 0;
+	margin: 0;
+	padding-top: 30px;
+}
+
+.logo h1:hover {
+	transition: 2s;
+	transform: rotate(10deg);
+	cursor: pointer;
+}
+
+.menu li {
+	list-style: none;
+	display: inline;
+
+}
+
+.menu a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #5d6e80;
+}
+
+.menu a:hover {
+	cursor: pointer;
+	color: #000;
+	transition: 0.3s;
+}
+
+.menu {
+	padding-top: 30px;
+	margin: 0;
+	word-spacing: 30px;
+}
+
+.menu ul {
+	padding: 0;
+	padding-left: 230px;
+}
+
+.button_on {
+	display: none;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+	/* стилі для md-устройств */
+	.menu ul {
+		padding-left: 150px;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* стилі для sm-устройств */
+	.menu ul {
+		padding-left: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	/* стилі для xs-устройств */
+.menu ul {
+	padding-left: 1px;
+}
+}
+
+@media (max-width: 696px) {
+header .button_on {
+	display: block;
+	margin-left: 400px;
+	margin-top: 30px;
+	width: 300px;
+}
+
+
+ header .menu {
+display: none;
+}
+}
+
+@media (max-width: 598px) {
+header .button_on {
+	margin-left: 350px;
+	margin-top: 30px;
+}
+}
+@media (max-width: 420px) {
+header .button_on {
+	margin-left: 300px;
+	margin-top: 30px;
+}
+}
+				/*To travel is to live*/
+.bg_travel {
+	height: 695px;
+	max-width: 1700px;
+	min-width: 435px;
+	background-image: url("../img/bg.jpg");
+}
+
+.text_travel h1 {
+	color: #fff;
+	font-size: 50px;
+	line-height: 100px;
+	text-transform: uppercase;
+}
+
+.text_travel p {
+	color: #fff;
+	font-size: 25px;
+	line-height: 30px;
+	padding-top: 30px;
+}
+
+.text_travel {
+	margin-top: 225px;
+}
+
+.button_block button {
+	height: 60px;
+	color: #fff;
+	font-size: 20px;
+	outline: none;
+	border-radius: 8px;
+	margin-top: 45px;
+}
+
+.button_block {
+	display: flex;
+	justify-content: space-around;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	/* стилі для sm-устройств */
+	.menu ul {
+		padding-left: 10px;
+	}
+}
+
+.btn_left {
+	background: #1dd2af;
+	width: 220px;
+}
+
+.btn_right {
+	background: transparent;
+	width: 155px;
+	border: 2px solid #fff;
+}
+
+.btn_left:hover {
+	color: #206154;
+	border: 2px solid #206154;
+	transition: 0.5s;
+	outline: none;
+}
+
+.btn_right:hover {
+	color: #000;
+	transition: 0.5s;
+	outline: none;
+}
+
+				/*Special Offers*/
+
+.text_Special_Offers {
+	height: 630px;
+	background: #fff;
+	max-width: 1700px;
+	min-width: 435px;
+}
+
+.text_Special_Offers h1 {
+	font-size: 25px;
+	line-height: 30px;
+	color: #2c3e50;
+	padding-top: 80px;
+	text-transform: uppercase;
+	transition: transform 1s;
+}
+
+.text_Special_Offers h1:hover, .text_Special_Offers p:hover {
+	transform: scale(1.2);
+	transition: 1s;
+	cursor: pointer;
+}
+
+.text_Special_Offers p {
+	font-size: 16px;
+	line-height: 25px;
+	color: #626262;
+	padding-top: 10px;
+}
+
+.box {
+	margin-top: -350px;
+}
+
+.box_inner img {
+	width: auto;
+	height: 200px;
+	opacity: 0.4;
+}
+
+.box_inner img:hover {
+	transition: 0.3s;
+	opacity: 1;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.box_inner img {
+	width: 300px;
+	height: 200px;
+	padding-top: 10px;
+
+}
+
+.box {
+	margin-top: -430px;
+	min-width: 435px;
+}
+
+.box_inner {
+	padding: 0 40px;
+}
+
+}
+
+				/*VIDEO*/
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+    max-width: 1700px;
+    min-width: 435px;
+    min-height: 200px;
+}
+ 
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+ 
+.overlay h1 {
+    text-align:center;
+    color:#fff;
+    font-size: 70px;
+    margin-top: 17%;
+}
+
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('../images/plane.jpg') center center / cover no-repeat;
+    }
+ 
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+					/*Form*/
+.get_form {
+	height: 100px;
+	border-top: 2px solid #3a4e61;
+	background: #2c3e50;
+	max-width: 1700px;
+	min-width: 435px;
+}
+.get_form:hover {
+	transition: 0.4s;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+
+}
+
+#form input {
+	width: 320px;
+	height: 50px;
+	background: #fff;
+	border: 1px solid #19242e;
+	margin-top: 25px;
+}
+
+#form input:hover {
+	border: 2px solid #19242e;
+	transition: 0.6s;
+	border-radius: 10px;
+	color: #000;
+	font-size: 20px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+#Search {
+	background: #1dd2af;	
+	width: 110px;
+	height: 50px;
+	border:none;
+	color: #fff;
+	font-family: Comic Sans MS, sans-serif;
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 25px;
+}
+
+#Search:hover {
+	transition: 0.6s;
+	border: 2px solid #245b50;
+	color: #245b50;
+	border-radius: 10px;
+	transform: rotate(360deg);
+}
+
+@media (max-width: 803px) {
+	#Search {
+	width: 120px;
+	margin-top: 60px;
+}
+
+#form input {
+	min-width: 180px;
+}
+
+.get_form {
+	min-height: 180px;
+}
+}
+
+				/*footer*/
+
+footer {
+	height: 450px;
+	background: #2c3e50;
+	max-width: 1700px;
+	min-width: 435px;
+}
+
+.Newsletter, .Latest_News, .Tags, .Address {
+	margin-top: 30px;
+}
+
+.Newsletter h1, .Latest_News h1, .Tags h1, .Address h1 {
+	color: #1dd2af;
+	font-size: 25px;
+	line-height: 58px;
+}
+
+.Newsletter p, .Latest_News p, .Tags p, .Address p {
+	color: #fff;
+	font-size: 13px;
+	line-height: 22px;
+}
+
+.Latest_News img {
+	float: left;
+}
+
+.flex_box a {
+	text-decoration: none;
+	border: 2px solid #fff;
+	display: inline-block;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.flex_box a:hover {
+	border: none;
+	color: #000;
+}
+
+.Newsletter input {
+	width: 150px;
+	height: 30px;
+	border: 2px solid #19242e;
+	color: #626262;
+	text-indent: 10px;
+	outline: none;
+}
+
+.Newsletter input[type=submit] {
+	width: 48px;
+	height: 30px;
+	background: #1dd2af;
+	border:  2px solid #004437;
+	color: #fff;
+	text-indent: 0;
+	outline: none;
+}
+
+address {
+	color: #fff;
+}
+
+@media (max-width: 767px) {
+	.Tags {
+		display: none;
+	}
+}
